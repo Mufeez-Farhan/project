@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>squareEvenodd</title>
+</head>
+<body>
+    Enter No
+    <br>
+    <input id="m1" type="text">
+    <br>
+    Result
+    <br>
+    <input id="m2" type="text">
+    <br>
+    <br>
+    <button onclick="fun1()">square</button>
+    <button onclick="fun2()">Evenodd</button>
+    <script>
+        function fun1(){
+            var a=document.getElementById("m1").value;
+            var b=parseInt(a)*parseInt(a);
+            document.getElementById("m2").value=b;
+        }
+        function fun2(){
+            var a=document.getElementById("m1").value;
+            if(a%2==0){
+                document.getElementById("m2").value="No is even";
+
+            }
+            else{
+                document.getElementById("m2").value="No is odd";
+                
+            }
+        }
+    </script>
+</body>
+</html>

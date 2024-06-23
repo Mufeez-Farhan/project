@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>pulsMinus</title>
+    <style>
+        div{
+            display: inline-block;
+            padding: 20px;
+            border-radius: 70px;
+            margin-left: 50%;
+            margin-top: 20%;
+        }
+        .r{
+            margin-left: 445px;
+        }
+        </style>
+        </head>
+        <body>
+        <div id="m">0</div>
+        <br>
+        <button class="r" onclick="fun1()">+</button>
+        <button class="s" onclick="fun2()">-</button>
+       <script>
+        var c=0
+        function fun1(){
+            c++;
+            var a=document.getElementById("m").innerHTML=c;
+        }
+        function fun2(){
+            c--;
+            var a=document.getElementById("m").innerHTML=c;
+        }
+       </script>
+
+<body>
+
+</body>
+</html>

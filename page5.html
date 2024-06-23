@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer with backgroundcolor</title>
+    <style>
+        div{
+            display: inline-block;
+            padding: 20px;
+            border-radius: 70px;
+            margin-left: 50% ;
+            margin-top: 20%;
+        }
+    </style>
+</head>
+<body>
+    <div id="m"></div>
+    <script>
+        var c=-1
+        function fun1(){
+            c++;
+            var a=document.getElementById("m").innerHTML=c;
+            document.getElementById("m").style.background="red";
+            if(a>10&& a<21){
+            document.getElementById("m").style.background="bule";
+            }
+            else if(a>20 && a<31){
+            document.getElementById("m").style.background="pink";
+            }
+            else if(a>30 && a<41){
+            document.getElementById("m").style.background="green";
+            }
+            else if(a>40 && a<51){
+            document.getElementById("m").style.background="silver";
+            }
+             else{
+            document.getElementById("m").style.background="red";
+        }
+    }
+    setInterval("fun1()",1000);
+    </script>
+    
+</body>
+</html>
